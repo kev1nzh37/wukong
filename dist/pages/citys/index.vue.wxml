@@ -1,0 +1,22 @@
+<template name="4013556c">
+  <view class="_div data-v-3a49ec06 container">
+    <view class="_div data-v-3a49ec06 header-c">
+      <view class="_div data-v-3a49ec06 header"><label class="_span data-v-3a49ec06">当前定位城市：</label> <label class="_span data-v-3a49ec06">当定位不正确时，请在城市列表中选择</label></view>
+      <view class="_div data-v-3a49ec06 location-city"><label class="_span data-v-3a49ec06">上海</label>
+        <view class="_i data-v-3a49ec06 icon qb-icon-down-arrow-s"></view>
+      </view>
+      <view class="_div data-v-3a49ec06 hot-c"><text class="_text data-v-3a49ec06">热门城市</text>
+        <view class="_div data-v-3a49ec06 hot-list">
+          <view class="_div data-v-3a49ec06 hot-name" wx:key="index" key="{{index}}" wx:for="{{hotList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-3a49ec06">{{item}}</label></view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-3a49ec06 city-list">
+      <view class="_div data-v-3a49ec06 city-group" wx:key="index" key="{{index}}" wx:for="{{hotList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-3a49ec06">A</label>
+        <view class="_div data-v-3a49ec06 group-list">
+          <view class="_div data-v-3a49ec06 city-name" wx:key="idx" key="{{idx}}" wx:for="{{groupList}}" wx:for-index="idx" wx:for-item="itx"><label class="_span data-v-3a49ec06">{{itx}}</label></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,4 @@
+<template name="66768bd2">
+  <view class="_div data-v-1ca56961 container">
+    <view class="_div data-v-1ca56961 content-c">
+      <view class="_div data-v-1ca56961 input-c"><textarea placeholder="请输入备注，最多50个字哦" placeholder-style="font-size: 28rpx" class="_textarea data-v-1ca56961" /> <label class="_span data-v-1ca56961">0 / 50</label></view> <view class="_div data-v-1ca56961 tag-c"><view class="_div data-v-1ca56961 tag" wx:key="index" key="{{index}}" wx:for="{{tags}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-1ca56961">{{item}}</label></view></view></view> <view class="_div data-v-1ca56961 submit">完成</view></view></template>

@@ -1,0 +1,24 @@
+<template name="991df1f0">
+  <view class="_div data-v-e98be9ce container">
+    <view class="_div data-v-e98be9ce cell-box">
+      <view class="_div data-v-e98be9ce cell">
+        <view class="_div data-v-e98be9ce title">
+          <view class="_div data-v-e98be9ce title-select"><label class="_span data-v-e98be9ce">+66</label>
+            <image src="/static/user/phone.png" alt class="_img data-v-e98be9ce"></image>
+          </view> <input type="text" value="{{username}}" bindinput="handleProxy" placeholder="请输入当前手机号" style="margin-left: 16rpx;" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-e98be9ce" />
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-e98be9ce cell-box" style="margin-top: 24rpx;">
+      <view class="_div data-v-e98be9ce cell">
+        <view class="_div data-v-e98be9ce title"><input type="text" value="{{code}}" bindinput="handleProxy" placeholder="请输入验证码" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-e98be9ce" /></view>
+        <view class="_div data-v-e98be9ce content">
+          <view class="_div data-v-e98be9ce send" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+            {{ sendValue }}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-e98be9ce submit"> 确定 </view> <label class="_span data-v-e98be9ce tips" style="color: rgba(255, 111, 99, 1)">请输入正确的验证码</label>
+  </view>
+</template>

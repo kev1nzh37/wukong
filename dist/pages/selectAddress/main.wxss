@@ -1,0 +1,255 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container.data-v-26de1aed {
+  position: relative;
+}
+.container .header-c.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  background-color: white;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #f1f2f3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.container .header-c .header-l.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+}
+.container .header-c .header-l .location.data-v-26de1aed {
+  width: 30rpx;
+  height: 30rpx;
+}
+.container .header-c .header-l ._span.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #222222;
+  margin: 0 10rpx;
+}
+.container .header-c .header-r.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.container .header-c .header-r .search-bar.data-v-26de1aed {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  background-color: #f6f6f6;
+  height: 70rpx;
+  border-radius: 8rpx;
+  padding-left: 20rpx;
+  margin-left: 30rpx;
+}
+.container .header-c .header-r .search-bar .search-icon.data-v-26de1aed {
+  width: 30rpx;
+  height: 30rpx;
+}
+.container .header-c .header-r .search-bar ._input.data-v-26de1aed {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  font-size: 28rpx;
+  height: 32rpx;
+  margin-top: 5rpx;
+}
+.container .header-c .header-r .search-bar .cancle.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+.container .header-c .header-r .search-bar .cancle ._i.data-v-26de1aed {
+  color: #999999;
+  font-size: 40rpx;
+}
+.container .location-c.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  background-color: white;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #f1f2f3;
+  margin-top: 100rpx;
+}
+.container .location-c .c-l.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #222222;
+  flex: 1;
+}
+.container .location-c .c-r.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+}
+.container .location-c .c-r ._i.data-v-26de1aed {
+  font-size: 36rpx;
+  color: #F9D173;
+}
+.container .location-c .c-r ._span.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
+  color: #ffbc02;
+  margin-left: 10rpx;
+}
+.container .my-address.data-v-26de1aed {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom: 2rpx solid #e4e4e4;
+  padding-top: 30rpx;
+}
+.container .my-address .header.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 30rpx;
+  background-color: white;
+}
+.container .my-address .header .home-icon.data-v-26de1aed {
+  width: 30rpx;
+  height: 30rpx;
+}
+.container .my-address .header ._span.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  margin-left: 16rpx;
+}
+.container .my-address .list-c.data-v-26de1aed {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70rpx;
+  margin-right: 20rpx;
+}
+.container .my-address .list-c .item.data-v-26de1aed {
+  display: flex;
+  flex-direction: column;
+  height: 120rpx;
+  background-color: white;
+  justify-content: center;
+  border-bottom: 2rpx solid #e4e4e4;
+}
+.container .my-address .list-c .item .i-t.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #222222;
+}
+.container .my-address .list-c .item .i-b.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.container .my-address .list-c .item .i-b .b-l.data-v-26de1aed {
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #999999;
+}
+.container .my-address .list-c .item .i-b .b-m.data-v-26de1aed {
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  margin-left: 40rpx;
+}
+.container .my-address .list-c .item .i-b .b-r.data-v-26de1aed {
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  margin-left: 40rpx;
+}
+.container .my-address .footer.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  margin-left: 70rpx;
+}
+.container .my-address .footer ._span.data-v-26de1aed {
+  font-size: 24rpx;
+  color: #666;
+}
+.container .my-address .footer ._i.data-v-26de1aed {
+  font-size: 32rpx;
+  color: #666;
+  margin-left: 10rpx;
+}
+.container .nearby-address.data-v-26de1aed {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 30rpx;
+  margin-bottom: 88rpx;
+}
+.container .nearby-address .header.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 30rpx;
+}
+.container .nearby-address .header .location.data-v-26de1aed {
+  width: 30rpx;
+  height: 30rpx;
+}
+.container .nearby-address .header ._span.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  margin-left: 16rpx;
+}
+.container .nearby-address .list-c.data-v-26de1aed {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70rpx;
+  margin-right: 20rpx;
+  background-color: magenta;
+}
+.container .nearby-address .list-c .item.data-v-26de1aed {
+  display: flex;
+  flex-direction: column;
+  height: 88rpx;
+  background-color: white;
+  justify-content: center;
+  border-bottom: 2rpx solid #e4e4e4;
+}
+.container .nearby-address .list-c .item ._span.data-v-26de1aed {
+  font-size: 28rpx;
+  font-family: PingFangSC-Medium,PingFang SC;
+  font-weight: 500;
+  color: #222222;
+}
+.container .nearby-address .list-c .item.data-v-26de1aed:last-child {
+  border-bottom: 0rpx solid #e4e4e4;
+}
+.container .footer-c.data-v-26de1aed {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  border-top: 2rpx solid #e4e4e4;
+}
+.container .footer-c ._i.data-v-26de1aed {
+  font-size: 36rpx;
+  color: #F9D173;
+}
+.container .footer-c ._span.data-v-26de1aed {
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 10rpx;
+}

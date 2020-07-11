@@ -1,0 +1,47 @@
+<template name="2247875c">
+  <view class="_div data-v-26de1aed container">
+    <view class="_div data-v-26de1aed header-c">
+      <view class="_div data-v-26de1aed header-l">
+        <image src="/static/img/location.png" class="_img data-v-26de1aed location" alt></image> <label class="_span data-v-26de1aed">{{cityData.result}}</label>
+        <view class="_i data-v-26de1aed icon mt-arrow-down-o" style=" {{('color:' + '#434343' + ';' + 'font-size:' + (28 + 'rpx') + ';')}}"></view>
+      </view>
+      <view class="_div data-v-26de1aed header-r">
+        <view class="_div data-v-26de1aed search-bar">
+          <image src="/static/img/search.png" class="_img data-v-26de1aed search-icon" alt></image> <input placeholder="请输入收货地址" placeholder-style="margin-left:8rpx;font-size:28rpx;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;color:rgba(153,153,153,1);" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-26de1aed" />
+          <view class="_div data-v-26de1aed cancle" wx:if="{{keyword}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+            <view class="_i data-v-26de1aed icon qb-icon-cancle-o"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-26de1aed location-c"><label class="_span data-v-26de1aed c-l">上海市闵行区漕河泾开发区</label>
+      <view class="_div data-v-26de1aed c-r">
+        <view class="_i data-v-26de1aed icon mt-relocation-o"></view> <label class="_span data-v-26de1aed">重新定位</label>
+      </view>
+    </view>
+    <view class="_div data-v-26de1aed my-address">
+      <view class="_div data-v-26de1aed header">
+        <image src="/static/img/home.png" class="_img data-v-26de1aed home-icon" alt></image> <label class="_span data-v-26de1aed">我的收获地址</label>
+      </view>
+      <view class="_div data-v-26de1aed list-c">
+        <view class="_div data-v-26de1aed item" wx:key="index" key="{{index}}" wx:for="{{myAddress}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-26de1aed i-t">{{item.address}}</label>
+          <view class="_div data-v-26de1aed i-b"><label class="_span data-v-26de1aed b-l">{{item.name}}</label> <label class="_span data-v-26de1aed b-m">{{item.gender}}</label> <label class="_span data-v-26de1aed b-r">{{item.phone}}</label></view>
+        </view>
+      </view>
+      <view class="_div data-v-26de1aed footer"><label class="_span data-v-26de1aed">展开全部4个地址</label>
+        <view class="_i data-v-26de1aed icon mt-arrow-down-o"></view>
+      </view>
+    </view>
+    <view class="_div data-v-26de1aed nearby-address">
+      <view class="_div data-v-26de1aed header">
+        <image src="/static/img/location.png" class="_img data-v-26de1aed location" alt></image> <label class="_span data-v-26de1aed">附近地址</label>
+      </view>
+      <view class="_div data-v-26de1aed list-c">
+        <view class="_div data-v-26de1aed item" wx:key="index" key="{{index}}" wx:for="{{nearbyAddress}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-26de1aed">{{item.name}}</label></view>
+      </view>
+    </view>
+    <view class="_div data-v-26de1aed footer-c" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+      <view class="_i data-v-26de1aed icon mt-add-o"></view> <label class="_span data-v-26de1aed">新增收货地址</label>
+    </view>
+  </view>
+</template>

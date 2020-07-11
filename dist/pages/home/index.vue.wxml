@@ -1,0 +1,86 @@
+<template name="7ceeb431">
+  <view class="_div data-v-45f4ad00 container">
+    <view class="_div data-v-45f4ad00 content">
+      <view class="_div data-v-45f4ad00 header-c">
+        <view class="_div data-v-45f4ad00 header-l" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+          <view class="_i data-v-45f4ad00 icon mt-location-o" style=" {{('color:' + '#434343' + ';' + 'font-size:' + (52 + 'rpx') + ';')}}"></view> <label class="_span data-v-45f4ad00">杭州</label>
+        </view>
+        <view class="_div data-v-45f4ad00 header-r" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="_span data-v-45f4ad00">请输入收货地址</label>
+          <view class="_i data-v-45f4ad00 icon mt-search-o"></view>
+        </view>
+      </view>
+      <view class="_div data-v-45f4ad00 category-c">
+        <view wx:key="index" key="{{index}}" wx:for="{{categoryArr}}" wx:for-index="index" wx:for-item="item" class="_div data-v-45f4ad00">
+          <view class="_div data-v-45f4ad00 grid-c">
+            <view class="_div data-v-45f4ad00 item" wx:key="idx" key="{{idx}}" bindtap="handleProxy" data-eventid="{{'2-'+index+'-'+idx}}" data-comkey="{{$k}}" wx:for="{{item.items}}" wx:for-index="idx" wx:for-item="itx">
+              <image class="_img data-v-45f4ad00 item-img" src="{{itx.url}}"></image> <label class="_span data-v-45f4ad00 item-title">{{ itx.name }}</label>
+            </view>
+          </view>
+        </view>
+      </view>
+      <swiper class="_swiper data-v-45f4ad00 ad-c" indicator-dots="true" indicator-color="#999" indicator-active-color="#FFC24A" autoplay="true">
+        <block wx:key="index" key="{{index}}" wx:for="{{topBannerData}}" wx:for-index="index" wx:for-item="item">
+          <swiper-item class="_swiper-item data-v-45f4ad00">
+            <image class="_img data-v-45f4ad00 ad-img" src="{{item.banner_pic_url}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="_div data-v-45f4ad00 b-banner">
+        <view class="_div data-v-45f4ad00 title">
+          <view class="_div data-v-45f4ad00 title-box">限时特价</view>
+        </view>
+        <view class="_div data-v-45f4ad00 img-box">
+          <image src="/static/img/food.png" alt class="_img data-v-45f4ad00"></image>
+          <image src="/static/img/food.png" alt class="_img data-v-45f4ad00"></image>
+          <image src="/static/img/food.png" alt class="_img data-v-45f4ad00"></image>
+          <image src="/static/img/food.png" alt class="_img data-v-45f4ad00"></image>
+        </view>
+      </view>
+      <view class="_div data-v-45f4ad00 section"><label class="_span data-v-45f4ad00 m">附近商家</label></view>
+      <view class="_div data-v-45f4ad00 category-list">
+        <view class="_div data-v-45f4ad00 filter-bar">
+          <view class="_div data-v-45f4ad00 filter-bar-item"><label class="_span data-v-45f4ad00">全部分类</label>
+            <image src="/static/img/filter.png" alt class="_img data-v-45f4ad00"></image>
+          </view>
+          <view class="_div data-v-45f4ad00 filter-bar-item"><label style="color: #999999;" class="_span data-v-45f4ad00">排序</label>
+            <image src="/static/img/filter.png" alt class="_img data-v-45f4ad00"></image>
+          </view>
+          <view class="_div data-v-45f4ad00 filter-bar-item"><label style="color: #999999;" class="_span data-v-45f4ad00">全部筛选</label>
+            <image src="/static/img/filter.png" alt class="_img data-v-45f4ad00"></image>
+          </view>
+        </view>
+        <view class="_div data-v-45f4ad00 item-list">
+          <view class="_div data-v-45f4ad00 item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'3-'+index}}" data-comkey="{{$k}}" wx:for="{{shopsList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-45f4ad00 item-l">
+              <image src="{{item.pic_url}}" class="_img data-v-45f4ad00"></image>
+            </view>
+            <view class="_div data-v-45f4ad00 item-r">
+              <view class="_div data-v-45f4ad00 r-t"><label class="_span data-v-45f4ad00 shop-name">{{ item.name }}</label>
+                <view class="_div data-v-45f4ad00 t-c">
+                  <view class="_div data-v-45f4ad00 c-l">
+                    <view class="_div data-v-45f4ad00 l-l">
+                      <image src="/static/img/star.png" alt class="_img data-v-45f4ad00"></image>
+                    </view> <label class="_span data-v-45f4ad00 l-m">{{ item.wm_poi_score }}</label> <label class="_span data-v-45f4ad00 l-r">{{ item.month_sales_tip }}</label>
+                  </view>
+                  <view class="_div data-v-45f4ad00 c-r"><label class="_span data-v-45f4ad00 r-l">{{ item.delivery_time_tip }}</label> <label class="_span data-v-45f4ad00 r-r">{{ item.distance }}</label></view>
+                </view>
+              </view>
+              <view class="_div data-v-45f4ad00 r-m">
+                <view class="_div data-v-45f4ad00"><label class="_span data-v-45f4ad00 m-l">{{ item.min_price_tip }}</label> <label class="_span data-v-45f4ad00 m-r">{{ item.shipping_fee_tip }}</label></view>
+                <view class="_div data-v-45f4ad00 m-d"><label class="_span data-v-45f4ad00">悟空专送</label></view>
+              </view>
+              <view class="_div data-v-45f4ad00 r-b"><label class="_span data-v-45f4ad00 b-l">支持自取</label> <label class="_span data-v-45f4ad00 b-r">极速配送</label></view>
+              <view class="_div data-v-45f4ad00 pay">
+                <view class="_div data-v-45f4ad00 pay-m"><label class="_span data-v-45f4ad00">26减3</label> <label class="_span data-v-45f4ad00">26减3</label></view>
+                <view class="_div data-v-45f4ad00 pay-l">
+                  <image src="/static/img/filter.png" alt class="_img data-v-45f4ad00"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <image src="/static/img/shopcart.png" class="_img data-v-45f4ad00 shopcart" alt></image>
+  </view>
+</template>

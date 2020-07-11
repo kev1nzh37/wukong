@@ -1,0 +1,1 @@
+<import src="/pages/editPassword/index.vue.wxml" /><template is="db2dd8d2" data="{{ ...$root['0'], $root }}"/>

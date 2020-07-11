@@ -1,0 +1,10 @@
+<template name="f9425ff6">
+  <view class="_div data-v-b69363d8 container">
+    <view class="_div data-v-b69363d8 search-bar"><input class="_input data-v-b69363d8 input" placeholder="输入学校、商务楼、地址" placeholder-style="font-size: 24rpx; color: #999999" auto-focus /> <button class="_button data-v-b69363d8 search-btn" bindtap="setDisabled">提交</button></view>
+    <view class="_div data-v-b69363d8 history-c"><text class="_text data-v-b69363d8">搜索历史</text>
+      <view class="_div data-v-b69363d8 history-list">
+        <view class="_div data-v-b69363d8 item" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-b69363d8 title">合川路</label> <label class="_span data-v-b69363d8 address">上海市闵行区</label></view>
+      </view>
+    </view> <button class="_button data-v-b69363d8 clear-btn" bindtap="setDisabled">清空所有</button>
+  </view>
+</template>

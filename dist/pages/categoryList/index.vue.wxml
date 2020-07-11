@@ -1,0 +1,61 @@
+<template name="612d1ace">
+  <view class="_div data-v-eac55dc6 container">
+    <view class="_div data-v-eac55dc6 content">
+      <view class="_div data-v-eac55dc6 search-bar" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_i data-v-eac55dc6 icon mt-search-o"></view> <label class="_span data-v-eac55dc6">请输入商家或者商品名称</label>
+      </view>
+      <view class="_div data-v-eac55dc6 category-c">
+        <scroll-view class="_scroll-view data-v-eac55dc6 l" scroll-x>
+          <view class="_view data-v-eac55dc6 tab-item" wx:key="index" key="{{index}}" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">{{item}}</view>
+          <view class="_view data-v-eac55dc6 line"></view>
+        </scroll-view>
+        <view class="_div data-v-eac55dc6 r">
+          <view class="_i data-v-eac55dc6 icon mt-arrow-down-o"></view>
+        </view>
+      </view>
+      <view class="_div data-v-eac55dc6 category-list">
+        <view class="_div data-v-eac55dc6 filter-bar">
+          <view class="_div data-v-eac55dc6 item" wx:key="index" key="{{index}}" wx:for="{{filterList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-eac55dc6">{{item.title}}</label>
+            <view class="_i data-v-eac55dc6 icon {{item.icon}}"></view>
+          </view>
+        </view>
+        <view class="_div data-v-eac55dc6 item-list">
+          <view class="_div data-v-eac55dc6 header">
+            <view class="_div data-v-eac55dc6 item" wx:key="index" key="{{index}}" wx:for="{{tags}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-eac55dc6">{{item}}</label></view>
+          </view>
+          <view class="_div data-v-eac55dc6 item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-eac55dc6 item-l">
+              <image src="{{item.pic_url}}" class="_img data-v-eac55dc6"></image>
+              <image class="_img data-v-eac55dc6 tag-img" src="{{item.poi_promotion_pic}}"></image>
+            </view>
+            <view class="_div data-v-eac55dc6 item-r">
+              <view class="_div data-v-eac55dc6 r-t"><label class="_span data-v-eac55dc6 shop-name">{{item.name}}</label>
+                <view class="_div data-v-eac55dc6 t-c">
+                  <view class="_div data-v-eac55dc6 c-l">
+                    <view class="_div data-v-eac55dc6 l-l">
+                      <view class="_i data-v-eac55dc6 icon mt-star-s" wx:key="idx" key="{{idx}}" wx:for="{{stars}}" wx:for-index="idx" wx:for-item="itx"></view>
+                    </view> <label class="_span data-v-eac55dc6 l-m">{{item.wm_poi_score}}</label> <label class="_span data-v-eac55dc6 l-r">{{item.month_sales_tip}}</label>
+                  </view>
+                  <view class="_div data-v-eac55dc6 c-r"><label class="_span data-v-eac55dc6 r-l">{{item.delivery_time_tip}}</label>
+                    <view class="_div data-v-eac55dc6 r-m"></view> <label class="_span data-v-eac55dc6 r-r">{{item.distance}}</label>
+                  </view>
+                </view>
+              </view>
+              <view class="_div data-v-eac55dc6 r-m"><label class="_span data-v-eac55dc6 m-l">{{item.min_price_tip}}</label>
+                <view class="_div data-v-eac55dc6 m-m"></view> <label class="_span data-v-eac55dc6 m-r">{{item.shipping_fee_tip}}</label>
+              </view>
+              <view class="_div data-v-eac55dc6 r-b"><label class="_span data-v-eac55dc6 b-l">支持自取</label> <label class="_span data-v-eac55dc6 b-r">极速配送</label></view>
+              <view class="_div data-v-eac55dc6 activity-c">
+                <view class="_div data-v-eac55dc6 ac-item" wx:key="idx" key="{{idx}}" wx:for="{{item.discounts2}}" wx:for-index="idx" wx:for-item="itm">
+                  <view class="_div data-v-eac55dc6 ac">
+                    <image class="_img data-v-eac55dc6 ac-l" src="{{itm.icon_url}}"></image> <label class="_span data-v-eac55dc6 ac-r">{{itm.info}}</label>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,15 @@
+<import src="/components/sep-line.vue.wxml" /><template name="952bed34">
+  <view class="_div data-v-b7aeff96 container">
+    <view class="_div data-v-b7aeff96 list-c">
+      <view class="_div data-v-b7aeff96 item" wx:key="index" key="{{index}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-b7aeff96 item-t">
+          <view class="_div data-v-b7aeff96 t-l"><label class="_span data-v-b7aeff96 s-t">{{item.title}}</label> <label class="_span data-v-b7aeff96 s-b">{{item.valid_time_desc}}</label></view>
+          <view class="_div data-v-b7aeff96 t-r"><label class="_span data-v-b7aeff96 s-t">￥<label class="_span data-v-b7aeff96">{{item.amount}}</label></label> <label class="_span data-v-b7aeff96 s-b">{{item.price_limit}}</label></view>
+        </view>
+        <view class="_div data-v-b7aeff96 item-m"><template data="{{...$root[$kk+'0-'+index], $root}}" is="4abf52b0"></template></view> <label class="_span data-v-b7aeff96 item-b">{{item.use_limits}}</label>
+        <image class="_img data-v-b7aeff96 status" src="http://ovyjkveav.bkt.clouddn.com/18-9-25/44107642.jpg"></image>
+      </view>
+    </view>
+    <view class="_div data-v-b7aeff96 bottom"><label class="_span data-v-b7aeff96 s-l">没有更多无效红包了</label></view>
+  </view>
+</template>

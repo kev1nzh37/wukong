@@ -1,0 +1,15 @@
+<template name="db2dd8d2">
+  <view class="_div data-v-884d6c34 container">
+    <view class="_div data-v-884d6c34 cell-box">
+      <view class="_div data-v-884d6c34 cell"><input type="password" value="{{password_old}}" bindinput="handleProxy" placeholder="请填写旧密码" hidden="{{!(old_show)}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-884d6c34" /> <input type="text" value="{{password_old}}" bindinput="handleProxy" placeholder="请填写旧密码" hidden="{{!(!old_show)}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-884d6c34" />
+        <van-icon name="{{old_show ? 'closed-eye' : 'eye-o'}}" style="font-size: 50rpx;" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_van-icon data-v-884d6c34"></van-icon>
+      </view>
+    </view>
+    <view class="_div data-v-884d6c34 cell-box">
+      <view class="_div data-v-884d6c34 cell"><input type="text" value="{{password_new}}" bindinput="handleProxy" placeholder="请填写新密码" hidden="{{!(!new_show)}}" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_input data-v-884d6c34" /> <input type="password" value="{{password_new}}" bindinput="handleProxy" placeholder="请填写新密码" hidden="{{!(new_show)}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_input data-v-884d6c34" />
+        <van-icon name="{{new_show ? 'closed-eye' : 'eye-o'}}" style="font-size: 50rpx;" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_van-icon data-v-884d6c34"></van-icon>
+      </view>
+    </view> <label class="_span data-v-884d6c34 tips">密码长度为8-32位，须包含数字、字母、符号至少2种或以上元素</label>
+    <view class="_div data-v-884d6c34 submit"> 确定 </view>
+  </view>
+</template>

@@ -1,0 +1,88 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container .list-c.data-v-b7aeff96 {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F4F4;
+}
+.container .list-c .item.data-v-b7aeff96 {
+  display: flex;
+  height: 250rpx;
+  background-color: white;
+  margin: 0 30rpx;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-radius: 8rpx;
+  position: relative;
+}
+.container .list-c .item .item-t.data-v-b7aeff96 {
+  display: flex;
+  margin: 0 40rpx;
+}
+.container .list-c .item .item-t .t-l.data-v-b7aeff96 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 30rpx;
+  flex: 1;
+}
+.container .list-c .item .item-t .t-l .s-t.data-v-b7aeff96 {
+  font-size: 38rpx;
+  color: #ccc;
+}
+.container .list-c .item .item-t .t-l .s-b.data-v-b7aeff96 {
+  font-size: 24rpx;
+  color: #ccc;
+  margin-top: 10rpx;
+}
+.container .list-c .item .item-t .t-r.data-v-b7aeff96 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 10rpx;
+}
+.container .list-c .item .item-t .t-r .s-t.data-v-b7aeff96 {
+  font-size: 32rpx;
+  color: #ccc;
+}
+.container .list-c .item .item-t .t-r .s-t ._span.data-v-b7aeff96 {
+  font-size: 60rpx;
+  color: #ccc;
+}
+.container .list-c .item .item-t .t-r .s-b.data-v-b7aeff96 {
+  font-size: 24rpx;
+  color: #ccc;
+}
+.container .list-c .item .item-m.data-v-b7aeff96 {
+  display: flex;
+  width: 100%;
+}
+.container .list-c .item .item-b.data-v-b7aeff96 {
+  font-size: 20rpx;
+  color: #666;
+  margin: 20rpx 40rpx;
+  height: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.container .list-c .item .status.data-v-b7aeff96 {
+  position: absolute;
+  bottom: 50rpx;
+  right: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+.container .bottom.data-v-b7aeff96 {
+  display: flex;
+  align-items: center;
+  margin: 40rpx;
+  justify-content: center;
+}
+.container .bottom ._span.data-v-b7aeff96 {
+  font-size: 24rpx;
+  color: #333;
+}

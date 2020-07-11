@@ -1,0 +1,89 @@
+<template name="384f4b6a">
+  <view class="_div data-v-38f14879 container">
+    <view class="_div data-v-38f14879 top">
+      <view class="_div data-v-38f14879 top-left">
+        <image src="/static/user/avatar.png" alt class="_img data-v-38f14879"></image>
+        <view class="_div data-v-38f14879">登录/注册</view>
+      </view>
+      <view class="_div data-v-38f14879 top-right">
+        <image src="/static/user/pic2.png" alt bindtap="handleProxy" style="margin-right: 25rpx;" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-38f14879"></image>
+        <image src="/static/user/pic1.png" alt bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_img data-v-38f14879"></image>
+        <view class="_div data-v-38f14879 dot">1</view>
+      </view>
+    </view>
+    <view class="_div data-v-38f14879 card">
+      <view class="_div data-v-38f14879 title"> 我的资产 </view>
+      <view class="_div data-v-38f14879 content">
+        <view class="_div data-v-38f14879 content-item">
+          <view class="_div data-v-38f14879 main">
+            <image src="/static/user/pic3.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">余额</label>
+          </view>
+          <view class="_div data-v-38f14879 text"><label class="_span data-v-38f14879">62.98</label>元</view>
+        </view>
+        <view class="_div data-v-38f14879 content-item">
+          <view class="_div data-v-38f14879 main">
+            <image src="/static/user/pic5.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">红包</label>
+          </view>
+          <view class="_div data-v-38f14879 text"><label class="_span data-v-38f14879">9</label>个未使用</view>
+        </view>
+        <view class="_div data-v-38f14879 content-item">
+          <view class="_div data-v-38f14879 main">
+            <image src="/static/user/pic4.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">优惠券</label>
+          </view>
+          <view class="_div data-v-38f14879 text"><label class="_span data-v-38f14879">19</label>张未使用</view>
+        </view>
+        <view class="_div data-v-38f14879 content-item">
+          <view class="_div data-v-38f14879 main">
+            <image src="/static/user/pic6.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">佣金</label>
+          </view>
+          <view class="_div data-v-38f14879 text"><label class="_span data-v-38f14879">1982</label>元</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-38f14879 card">
+      <view class="_div data-v-38f14879 title"> 我的资产 </view>
+      <view class="_div data-v-38f14879 content-2">
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic7.png" alt style="height: 44rpx; width: 36rpx;" class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">余额</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic8.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">收藏的店</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic9.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">邀请赚钱</label>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-38f14879 card">
+      <view class="_div data-v-38f14879 title"> 我的服务 </view>
+      <view class="_div data-v-38f14879 content-2">
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic15.png" alt style="height: 44rpx; width: 36rpx;" class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">我的积分</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic10.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">积分兑换</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic11.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">我要合作</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic12.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">联系客服</label>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-38f14879 card">
+      <view class="_div data-v-38f14879 title"> 更多推荐 </view>
+      <view class="_div data-v-38f14879 content-2">
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic13.png" alt style="height: 44rpx; width: 36rpx;" class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">关于我们</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic14.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">用户协议</label>
+        </view>
+        <view class="_div data-v-38f14879 content-item-2">
+          <image src="/static/user/pic16.png" alt class="_img data-v-38f14879"></image> <label class="_span data-v-38f14879">隐私政策</label>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

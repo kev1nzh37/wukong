@@ -1,0 +1,20 @@
+<import src="/components/sep-line.vue.wxml" /><template name="b6b1bc94">
+  <view class="_div data-v-7402c076 container">
+    <view class="_div data-v-7402c076 list-c">
+      <view class="_div data-v-7402c076 item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{couponList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-7402c076 item-t">
+          <image class="_img data-v-7402c076 top-l" src="{{item.poi_url}}"></image>
+          <view class="_div data-v-7402c076 top-m"><label class="_span data-v-7402c076 s-t">{{item.title}}</label> <label class="_span data-v-7402c076 s-m">互斥券</label> <label class="_span data-v-7402c076 s-b">{{item.valid_time_desc}}</label></view>
+          <view class="_div data-v-7402c076 top-r"><label class="_span data-v-7402c076 s-t">￥<label class="_span data-v-7402c076">{{item.money}}</label></label> <label class="_span data-v-7402c076 s-b">{{item.price_limit}}</label></view>
+        </view>
+        <view class="_div data-v-7402c076 item-m"><template data="{{...$root[$kk+'0-'+index], $root}}" is="4abf52b0"></template></view>
+        <view class="_div data-v-7402c076 item-b"><label class="_span data-v-7402c076 b-l">{{item.use_rule}}</label>
+          <view class="_div data-v-7402c076 b-r"><label class="_span data-v-7402c076">去使用</label>
+            <view class="_i data-v-7402c076 icon mt-arrow-right-o"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-7402c076 bottom" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="_span data-v-7402c076 s-l">没有更多商家代金券了</label> <label class="_span data-v-7402c076 s-m">|</label> <label class="_span data-v-7402c076 s-r">查看过期券</label> <label class="_span data-v-7402c076 s-arrow">>></label></view>
+  </view>
+</template>

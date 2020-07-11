@@ -1,0 +1,17 @@
+<template name="bf81a430">
+  <view class="_div data-v-4d89a612 container">
+    <view class="_div data-v-4d89a612 cell-box">
+      <view class="_div data-v-4d89a612 cell" wx:key="item.title" key="{{item.title}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-4d89a612 title">
+          {{ item.title }}
+        </view>
+        <view class="_div data-v-4d89a612 content">
+          <image src="/static/user/avatar.png" alt class="_img data-v-4d89a612 avatar" wx:if="{{item.title == '头像'}}"></image> <label wx:if="{{item.title != '头像'}}" class="_span data-v-4d89a612 value">{{ item.value
+        }}</label>
+          <van-icon name="arrow" color="rgba(216, 216, 216)" style="margin-left: 12rpx;" class="_van-icon data-v-4d89a612"></van-icon>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-4d89a612 logout"> 退出当前账号 </view>
+  </view>
+</template>

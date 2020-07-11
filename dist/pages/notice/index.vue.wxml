@@ -1,0 +1,19 @@
+<template name="1325112a">
+  <view class="_div data-v-6d58228e container">
+    <view class="_div data-v-6d58228e notice">
+      <view class="_div data-v-6d58228e left">
+        <image src="/static/notice/pic2.png" alt class="_img data-v-6d58228e"></image>
+        <view class="_div data-v-6d58228e notice-text"><label class="_span data-v-6d58228e main">系统通知</label> <label class="_span data-v-6d58228e other">暂无新消息</label></view>
+      </view>
+    </view>
+    <view class="_div data-v-6d58228e notice">
+      <view class="_div data-v-6d58228e left">
+        <image src="/static/notice/pic1.png" alt class="_img data-v-6d58228e"></image>
+        <view class="_div data-v-6d58228e notice-text"><label class="_span data-v-6d58228e main">
+            <view class="_div data-v-6d58228e main-left">营销活动</view>
+            <view class="_div data-v-6d58228e main-right">2020/06/05</view>
+          </label> <label class="_span data-v-6d58228e other">“汉堡王（杭州滨江龙湖天街24486)”送您大萨达撒多撒大所大所</label></view>
+      </view>
+    </view>
+  </view>
+</template>

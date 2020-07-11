@@ -1,0 +1,110 @@
+<import src="/components/sep-line.vue.wxml" /><template name="044152da">
+  <view class="_div data-v-0dd996ab container">
+    <view class="_div data-v-0dd996ab header-c">
+      <view class="_div data-v-0dd996ab tab-c">
+        <view class="_div data-v-0dd996ab left" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" style=" {{(  'background-color:' +  (tabIndex === 0 ? '#fff' : '#F8F8F8') +  ';' +  'font-weight:' +  (tabIndex === 0 ? 'bold' : '') +  ';')}}">外卖配送</view>
+        <view class="_div data-v-0dd996ab right" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" style=" {{(  'background-color:' +  (tabIndex === 1 ? '#fff' : '#F8F8F8') +  ';' +  'font-weight:' +  (tabIndex === 1 ? 'bold' : '') +  ';')}}">到店自取</view>
+      </view>
+      <view class="_div data-v-0dd996ab delivery" wx:if="{{tabIndex === 0}}">
+        <view class="_div data-v-0dd996ab address-c" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+          <view class="_i data-v-0dd996ab icon mt-location-s"></view>
+          <view class="_div data-v-0dd996ab address"><label class="_span data-v-0dd996ab address-info">{{addressInfo.address}} {{addressInfo.house_number}}</label> <label class="_span data-v-0dd996ab user-info">{{addressInfo.name}} {{addressInfo.gender}} {{addressInfo.phone}}</label></view>
+          <view class="_i data-v-0dd996ab icon mt-arrow-right-o" style=" {{('font-size:' + (28 + 'rpx') + ';' + 'color:' + '#999' + ';')}}"></view>
+        </view>
+        <view class="_div data-v-0dd996ab line-sp"></view>
+        <view class="_div data-v-0dd996ab delivery-time">
+          <view class="_i data-v-0dd996ab icon mt-clock-s"></view>
+          <view class="_div data-v-0dd996ab content"><label class="_span data-v-0dd996ab c-l">{{arrivalInfo.date_type_tip}}</label> <label class="_span data-v-0dd996ab c-r">{{arrivalInfo.select_view_time}}</label></view>
+          <view class="_i data-v-0dd996ab icon mt-arrow-right-o" style=" {{('font-size:' + (28 + 'rpx') + ';' + 'color:' + '#999' + ';')}}"></view>
+        </view>
+      </view>
+      <view class="_div data-v-0dd996ab pick" wx:if="{{tabIndex === 1}}"><label class="_span data-v-0dd996ab title">商家地址</label> <label class="_span data-v-0dd996ab address">{{pcikData.address}}</label>
+        <view class="_div data-v-0dd996ab map"><label class="_span data-v-0dd996ab distance">距您{{pcikData.distance}}</label>
+          <view class="_div data-v-0dd996ab line"></view> <label class="_span data-v-0dd996ab btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">查看地图</label>
+        </view>
+        <view class="_div data-v-0dd996ab time">
+          <view class="_div data-v-0dd996ab l"><label class="_span data-v-0dd996ab l-t">自取时间</label>
+            <view class="_div data-v-0dd996ab l-b"><label class="_span data-v-0dd996ab">22：49</label>
+              <view class="_i data-v-0dd996ab icon mt-arrow-right-o"></view>
+            </view>
+          </view>
+          <view class="_div data-v-0dd996ab line"></view>
+          <view class="_div data-v-0dd996ab r"><label class="_span data-v-0dd996ab r-t">预留电话</label>
+            <view class="_div data-v-0dd996ab r-b"><label class="_span data-v-0dd996ab">{{pcikData.phone}}</label>
+              <view class="_i data-v-0dd996ab icon mt-arrow-right-o"></view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-0dd996ab protocol">
+          <view class="_i data-v-0dd996ab icon mt-selected-square-o"></view> <label class="_span data-v-0dd996ab">同意</label> <text bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_text data-v-0dd996ab">《到店自取用户协议》</text>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-0dd996ab item-list">
+      <view class="_div data-v-0dd996ab section">
+        <image src="{{itemData.poi_icon}}" class="_img data-v-0dd996ab"></image> <label class="_span data-v-0dd996ab">{{itemData.poi_name}}</label> <text class="_text data-v-0dd996ab tag">商家自配</text>
+      </view>
+      <view class="_div data-v-0dd996ab list">
+        <view class="_div data-v-0dd996ab item" wx:key="index" key="{{index}}" wx:for="{{foodList}}" wx:for-index="index" wx:for-item="item">
+          <image src="{{item.picture}}" class="_img data-v-0dd996ab"></image>
+          <view class="_div data-v-0dd996ab item-r">
+            <view class="_div data-v-0dd996ab r-t"><label class="_span data-v-0dd996ab">{{item.name}}</label> <label class="_span data-v-0dd996ab">￥{{item.totalPrice}}</label></view> <label class="_span data-v-0dd996ab">x{{item.sequence}}</label>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-0dd996ab footer">
+        <view class="_div data-v-0dd996ab fold"><label class="_span data-v-0dd996ab">展开更多</label>
+          <view class="_i data-v-0dd996ab icon mt-arrow-down-o"></view>
+        </view>
+        <view class="_div data-v-0dd996ab package-cast"><label class="_span data-v-0dd996ab">包装费</label> <label class="_span data-v-0dd996ab">￥{{foodList.length}}</label></view>
+        <view class="_div data-v-0dd996ab delivery-cast"><label class="_span data-v-0dd996ab">配送费</label> <label class="_span data-v-0dd996ab">￥{{deliveryFee}}</label></view> <template data="{{...$root[$kk+'0'], $root}}" is="4abf52b0"></template>
+        <view class="_div data-v-0dd996ab discount">
+          <view class="_div data-v-0dd996ab item" wx:key="index" key="{{index}}" wx:for="{{itemData.discounts}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{item.icon_url}}" class="_img data-v-0dd996ab"></image> <label class="_span data-v-0dd996ab name">{{item.name}}</label> <label class="_span data-v-0dd996ab info">{{item.info}}</label>
+          </view>
+        </view>
+        <view class="_div data-v-0dd996ab red-packet" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"><label class="_span data-v-0dd996ab l">美团红包</label>
+          <view class="_div data-v-0dd996ab r"><label class="_span data-v-0dd996ab">4张可用</label>
+            <view class="_i data-v-0dd996ab icon mt-arrow-right-o"></view>
+          </view>
+        </view>
+        <view class="_div data-v-0dd996ab coupon" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"><label class="_span data-v-0dd996ab l">商家代金券</label>
+          <view class="_div data-v-0dd996ab r"><label class="_span data-v-0dd996ab">10张可用</label>
+            <view class="_i data-v-0dd996ab icon mt-arrow-right-o"></view>
+          </view>
+        </view> <template data="{{...$root[$kk+'1'], $root}}" is="4abf52b0"></template>
+        <view class="_div data-v-0dd996ab totle-price"><label class="_span data-v-0dd996ab l" wx:if="{{reduceFee > 0}}">已优惠￥{{reduceFee}}</label> <label class="_span data-v-0dd996ab m">小计</label> <label class="_span data-v-0dd996ab r">￥{{realFee}}</label></view>
+      </view>
+    </view>
+    <view class="_div data-v-0dd996ab privacy-c">
+      <view class="_div data-v-0dd996ab top">
+        <view class="_div data-v-0dd996ab t-l">
+          <view class="_i data-v-0dd996ab icon mt-lock-o" style=" {{('color:' + '#434343' + ';' + 'font-size:' + (32 + 'rpx') + ';')}}"></view> <label class="_span data-v-0dd996ab">{{privacy_service.privacy_title}}</label>
+          <view class="_i data-v-0dd996ab icon mt-help-o" style=" {{('color:' + '#999' + ';' + 'font-size:' + (24 + 'rpx') + ';')}}"></view>
+        </view>
+        <switch bindchange="switch2Change" class="_switch data-v-0dd996ab" />
+      </view> <label class="_span data-v-0dd996ab">{{privacy_service.privacy_close_desc}}</label>
+    </view>
+    <view class="_div data-v-0dd996ab bottom-c">
+      <view class="_div data-v-0dd996ab b-top"><label class="_span data-v-0dd996ab">支付方式</label> <label class="_span data-v-0dd996ab">在线支付</label></view>
+      <view class="_div data-v-0dd996ab b-mid" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}"><label class="_span data-v-0dd996ab mid-l">备注</label>
+        <view class="_div data-v-0dd996ab mid-r"><label class="_span data-v-0dd996ab">{{remark_field.hint}}</label>
+          <view class="_i data-v-0dd996ab icon mt-arrow-right-o"></view>
+        </view>
+      </view>
+      <view class="_div data-v-0dd996ab b-btm"><label class="_span data-v-0dd996ab b-l">餐具数量</label>
+        <view class="_div data-v-0dd996ab b-r">
+          <view class="_i data-v-0dd996ab icon mt-leaf-o" style=" {{('color:' + '#00CB91' + ';' + 'font-size:' + (38 + 'rpx') + ';')}}"></view> <label class="_span data-v-0dd996ab s-l">一起为环保助力</label>
+          <picker class="_picker data-v-0dd996ab picker" mode="selector" range="{{tablewareArr}}">
+            <view class="_div data-v-0dd996ab"><label class="_span data-v-0dd996ab s-r">未选择</label>
+              <view class="_i data-v-0dd996ab icon mt-arrow-right-o" style=" {{('color:' + '#999' + ';' + 'font-size:' + (28 + 'rpx') + ';')}}"></view>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-0dd996ab pay-btn" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-0dd996ab top"><label class="_span data-v-0dd996ab s-l">微信支付</label> <label class="_span data-v-0dd996ab s-m">￥{{realFee}}</label> <label class="_span data-v-0dd996ab s-r">已优惠￥{{reduceFee}}</label></view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,15 @@
+<template name="67b44076">
+  <view class="_div data-v-714c8447 container">
+    <view class="_div data-v-714c8447 list-c">
+      <view class="_div data-v-714c8447 item" wx:key="index" key="{{index}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-714c8447 i-l"><label class="_span data-v-714c8447 address">{{item.address}} {{item.house_number}}</label>
+          <view class="_div data-v-714c8447 user-info"><label class="_span data-v-714c8447 s-l">{{item.name}}</label> <label class="_span data-v-714c8447 s-m">{{item.gender}}</label> <label class="_span data-v-714c8447 s-r">{{item.phone}}</label></view>
+        </view>
+        <view class="_i data-v-714c8447 icon mt-edit-o"></view>
+      </view>
+    </view>
+    <view class="_div data-v-714c8447 add-btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_i data-v-714c8447 icon mt-add-o"></view> <label class="_span data-v-714c8447">新增收货地址</label>
+    </view>
+  </view>
+</template>

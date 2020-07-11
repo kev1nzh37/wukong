@@ -1,0 +1,95 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container.data-v-e98be9ce {
+  margin-top: 24rpx;
+}
+.cell-box.data-v-e98be9ce {
+  background: white;
+}
+.cell-box .cell.data-v-e98be9ce {
+  height: 120rpx;
+  background: white;
+  border-bottom: 2rpx solid #f1f2f3;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cell-box .cell .title.data-v-e98be9ce {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #222222;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cell-box .cell .content.data-v-e98be9ce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell-box .cell .content .avatar.data-v-e98be9ce {
+  width: 80rpx;
+  height: 80rpx;
+}
+.cell-box .cell .content .value.data-v-e98be9ce {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+.logout.data-v-e98be9ce {
+  height: 100rpx;
+  background: white;
+  border-top: 4rpx solid #f1f2f3;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ff6f63;
+}
+.tips.data-v-e98be9ce {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #101010;
+  margin-top: 24rpx;
+  margin-left: 24rpx;
+}
+.submit.data-v-e98be9ce {
+  height: 88rpx;
+  background: #ffbc02;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin: 0 24rpx;
+  margin-top: 48rpx;
+}
+.title-select.data-v-e98be9ce {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title-select ._img.data-v-e98be9ce {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 4rpx;
+}
+.title-select ._span.data-v-e98be9ce {
+  font-size: 24rpx;
+}
+.send.data-v-e98be9ce {
+  height: 60rpx;
+  background: #d8d8d8;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #101010;
+  padding: 0 20rpx;
+}

@@ -1,0 +1,19 @@
+<template name="d09201da">
+  <view class="_div data-v-6f800324 container">
+    <view class="_div data-v-6f800324 cell-box">
+      <view class="_div data-v-6f800324 cell" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-6f800324 title">
+          {{ item.title }}
+        </view>
+        <view class="_div data-v-6f800324 content">
+          <image src="/static/user/avatar.png" alt class="_img data-v-6f800324 avatar" wx:if="{{item.title == '头像'}}"></image> <label wx:if="{{item.title != '头像'}}" class="_span data-v-6f800324 value">{{ item.value
+        }}</label>
+          <van-icon name="arrow" color="rgba(216, 216, 216)" style="margin-left: 12rpx;" class="_van-icon data-v-6f800324"></van-icon>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-6f800324 logout" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 退出当前账号 </view>
+    <van-action-sheet show="{{sexShow}}" actions="{{sexActions}}" bindselect="handleProxy" bindcancel="handleProxy" cancel-text="{{'取消'}}" round="{{false}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_van-action-sheet data-v-6f800324"></van-action-sheet>
+    <van-dialog message="\n\n是否退出登录\n\n\n" show="{{logShow}}" show-cancel-button show-confirm-button bindconfirm="handleProxy" bindcancel="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_van-dialog data-v-6f800324"></van-dialog>
+  </view>
+</template>

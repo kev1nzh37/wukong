@@ -1,0 +1,25 @@
+<template name="2655ed25">
+  <view class="_div data-v-47ad6b34 container">
+    <view class="_div data-v-47ad6b34 address"><label class="_span data-v-47ad6b34 l">收货地址：</label>
+      <view class="_div data-v-47ad6b34 m">
+        <image src="/static/img/location.png" alt class="_img data-v-47ad6b34"></image> <label class="_span data-v-47ad6b34">点击选择</label>
+      </view>
+      <view class="_div data-v-47ad6b34 r">
+        <image src="/static/img/right.png" alt class="_img data-v-47ad6b34"></image>
+      </view>
+    </view>
+    <view class="_div data-v-47ad6b34 name"><label class="_span data-v-47ad6b34">联系人：</label> <input placeholder="请填写收货人的姓名" placeholder-style="font-size:28rpx;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;color:rgba(153,153,153,1);" auto-focus class="_input data-v-47ad6b34" /></view>
+    <view class="_div data-v-47ad6b34 sex">
+      <view class="_div data-v-47ad6b34 l"></view>
+      <view class="_div data-v-47ad6b34 m">
+        <image src="/static/img/selection2.png" alt class="_img data-v-47ad6b34"></image> <label class="_span data-v-47ad6b34">先生</label>
+      </view>
+      <view class="_div data-v-47ad6b34 r">
+        <image src="/static/img/selection1.png" alt class="_img data-v-47ad6b34"></image> <label class="_span data-v-47ad6b34">女士</label>
+      </view>
+    </view>
+    <view class="_div data-v-47ad6b34 phone"><label class="_span data-v-47ad6b34">手机号：</label> <input placeholder="请填写收货人手机号码" placeholder-style="font-size:28rpx;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;color:rgba(153,153,153,1);" auto-focus class="_input data-v-47ad6b34" /></view>
+    <view class="_div data-v-47ad6b34 house-num"><label class="_span data-v-47ad6b34">门牌号：</label> <input placeholder="【详细地址，例1层101室】" placeholder-style="font-size:28rpx;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;color:rgba(153,153,153,1);" auto-focus class="_input data-v-47ad6b34" /></view>
+    <view class="_div data-v-47ad6b34 submit"><label class="_span data-v-47ad6b34">保存地址</label></view>
+  </view>
+</template>

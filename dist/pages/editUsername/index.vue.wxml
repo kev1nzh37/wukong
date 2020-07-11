@@ -1,0 +1,11 @@
+<template name="5056d7dc">
+  <view class="_div data-v-0144ca61 container">
+    <view class="_div data-v-0144ca61 cell-box">
+      <view class="_div data-v-0144ca61 cell">
+        <view class="_div data-v-0144ca61 title"> 用户名 </view>
+        <view class="_div data-v-0144ca61 content"><label class="_span data-v-0144ca61 value"><input type="text" value="{{username}}" bindinput="handleProxy" style="text-align: right;" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-0144ca61" /></label></view>
+      </view>
+    </view> <label class="_span data-v-0144ca61 tips">限制4-16个字符，一个汉字2字符</label>
+    <view class="_div data-v-0144ca61 submit"> 确定 </view>
+  </view>
+</template>

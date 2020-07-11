@@ -1,0 +1,50 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container.data-v-6f800324 {
+  margin-top: 24rpx;
+}
+.cell-box.data-v-6f800324 {
+  background: white;
+}
+.cell-box .cell.data-v-6f800324 {
+  height: 120rpx;
+  background: white;
+  border-bottom: 2rpx solid #f1f2f3;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cell-box .cell .title.data-v-6f800324 {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #222222;
+}
+.cell-box .cell .content.data-v-6f800324 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell-box .cell .content .avatar.data-v-6f800324 {
+  width: 80rpx;
+  height: 80rpx;
+}
+.cell-box .cell .content .value.data-v-6f800324 {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+.logout.data-v-6f800324 {
+  height: 100rpx;
+  background: white;
+  border-top: 4rpx solid #f1f2f3;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ff6f63;
+}

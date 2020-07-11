@@ -1,0 +1,1 @@
+<import src="/pages/expiredCoupon/index.vue.wxml" /><template is="16ae8bef" data="{{ ...$root['0'], $root }}"/>

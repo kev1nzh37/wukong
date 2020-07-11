@@ -1,0 +1,99 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container .list-c.data-v-1b451f80 {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F4F4;
+}
+.container .list-c .item.data-v-1b451f80 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30rpx;
+  margin-top: 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  position: relative;
+}
+.container .list-c .item .item-t.data-v-1b451f80 {
+  display: flex;
+  margin: 20rpx;
+}
+.container .list-c .item .item-t ._img.data-v-1b451f80 {
+  width: 100rpx;
+  height: 100rpx;
+  border: 2rpx solid #666;
+}
+.container .list-c .item .item-t .top-m.data-v-1b451f80 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  flex: 1;
+}
+.container .list-c .item .item-t .top-m .s-t.data-v-1b451f80 {
+  font-size: 28rpx;
+  color: #666;
+}
+.container .list-c .item .item-t .top-m .s-m.data-v-1b451f80 {
+  font-size: 20rpx;
+  color: #666;
+  border: 2rpx solid #ccc;
+  width: 80rpx;
+  text-align: center;
+  margin: 10rpx 0;
+}
+.container .list-c .item .item-t .top-m .s-b.data-v-1b451f80 {
+  font-size: 20rpx;
+  color: #666;
+}
+.container .list-c .item .item-t .top-r.data-v-1b451f80 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 20rpx;
+}
+.container .list-c .item .item-t .top-r .s-t.data-v-1b451f80 {
+  font-size: 32rpx;
+  color: #666;
+}
+.container .list-c .item .item-t .top-r .s-t ._span.data-v-1b451f80 {
+  font-size: 60rpx;
+  color: #666;
+}
+.container .list-c .item .item-t .top-r .s-b.data-v-1b451f80 {
+  font-size: 20rpx;
+  color: #666;
+}
+.container .list-c .item .item-m.data-v-1b451f80 {
+  display: flex;
+  width: 100%;
+}
+.container .list-c .item .item-b.data-v-1b451f80 {
+  display: flex;
+  margin: 20rpx;
+  align-items: center;
+}
+.container .list-c .item .item-b .b-l.data-v-1b451f80 {
+  font-size: 20rpx;
+  color: #666;
+  flex: 1;
+}
+.container .list-c .item .status-im.data-v-1b451f80 {
+  position: absolute;
+  right: 30rpx;
+  top: 80rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+.container .bottom.data-v-1b451f80 {
+  display: flex;
+  align-items: center;
+  margin: 40rpx;
+  justify-content: center;
+}
+.container .bottom .s-l.data-v-1b451f80 {
+  font-size: 20rpx;
+  color: #333;
+}

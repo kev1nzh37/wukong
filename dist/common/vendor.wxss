@@ -1,0 +1,25 @@
+
+@charset "UTF-8";
+.line-c.data-v-2b65aa0e {
+  display: flex;
+  align-items: center;
+  height: 40rpx;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+.line-c .l.data-v-2b65aa0e {
+  width: 20rpx;
+  height: 40rpx;
+  border-radius: 0 20rpx 20rpx 0;
+}
+.line-c .line.data-v-2b65aa0e {
+  flex: 1;
+  height: 2rpx;
+  margin: 0 12rpx;
+}
+.line-c .r.data-v-2b65aa0e {
+  width: 20rpx;
+  height: 40rpx;
+  border-radius: 20rpx 0 0 20rpx;
+}

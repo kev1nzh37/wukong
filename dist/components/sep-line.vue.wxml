@@ -1,0 +1,7 @@
+<template name="4abf52b0">
+  <view class="_div data-v-2b65aa0e line-c" style=" {{containerStyle}}">
+    <view class="_div data-v-2b65aa0e l" style=" {{semicircleStyle}}"></view>
+    <view class="_div data-v-2b65aa0e line" style=" {{lineStyle}}"></view>
+    <view class="_div data-v-2b65aa0e r" style=" {{semicircleStyle}}"></view>
+  </view>
+</template>

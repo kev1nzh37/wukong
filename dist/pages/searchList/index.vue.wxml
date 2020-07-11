@@ -1,0 +1,28 @@
+<template name="a3e03890">
+  <view class="_div data-v-61313c72 container">
+    <view class="_div data-v-61313c72 content">
+      <view class="_div data-v-61313c72 search-c">
+        <view class="_div data-v-61313c72 search-bar">
+          <view class="_i data-v-61313c72 icon mt-search-o"></view> <input placeholder="请输入城市名称查询" placeholder-style="font-size: 24rpx" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-61313c72" />
+          <view class="_div data-v-61313c72 cancle" wx:if="{{keyword}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+            <view class="_i data-v-61313c72 icon qb-icon-cancle-o"></view>
+          </view>
+        </view> <label class="_span data-v-61313c72 search-btn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">搜索</label>
+      </view> <label class="_span data-v-61313c72 title">热门搜索</label>
+      <view class="_div data-v-61313c72 line-t"></view>
+      <view class="_div data-v-61313c72 tag-list">
+        <view class="_div data-v-61313c72 tag" wx:key="index" key="{{index}}" wx:for="{{hotList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-61313c72">{{item.label_name}}</label></view>
+      </view>
+      <view class="_div data-v-61313c72 line-m"></view>
+      <view class="_div data-v-61313c72 history-c">
+        <view class="_div data-v-61313c72 header"><label class="_span data-v-61313c72">历史搜索</label>
+          <view class="_i data-v-61313c72 icon mt-trash-o"></view>
+        </view>
+        <view class="_div data-v-61313c72 line-b"></view>
+        <view class="_div data-v-61313c72 history-list">
+          <view class="_div data-v-61313c72 item" wx:key="index" key="{{index}}" wx:for="{{historyList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-61313c72">{{item}}</label></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

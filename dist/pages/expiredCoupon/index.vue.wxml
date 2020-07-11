@@ -1,0 +1,17 @@
+<import src="/components/sep-line.vue.wxml" /><template name="16ae8bef">
+  <view class="_div data-v-1b451f80 container">
+    <view class="_div data-v-1b451f80 list-c">
+      <view class="_div data-v-1b451f80 item" wx:key="index" key="{{index}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-1b451f80 item-t">
+          <image class="_img data-v-1b451f80 top-l" src="{{item.poi_url}}"></image>
+          <view class="_div data-v-1b451f80 top-m"><label class="_span data-v-1b451f80 s-t">{{item.title}}</label> <label class="_span data-v-1b451f80 s-m">互斥券</label> <label class="_span data-v-1b451f80 s-b">{{item.valid_time_desc}}</label></view>
+          <view class="_div data-v-1b451f80 top-r"><label class="_span data-v-1b451f80 s-t">￥<label class="_span data-v-1b451f80">{{item.money}}</label></label> <label class="_span data-v-1b451f80 s-b">{{item.price_limit}}</label></view>
+        </view>
+        <view class="_div data-v-1b451f80 item-m"><template data="{{...$root[$kk+'0-'+index], $root}}" is="4abf52b0"></template></view>
+        <view class="_div data-v-1b451f80 item-b"><label class="_span data-v-1b451f80 b-l">{{item.use_rule}}</label></view>
+        <image class="_img data-v-1b451f80 status-im" src="http://ovyjkveav.bkt.clouddn.com/18-9-26/49925456.jpg"></image>
+      </view>
+    </view>
+    <view class="_div data-v-1b451f80 bottom"><label class="_span data-v-1b451f80 s-l">没有更多过期商家代金券了</label></view>
+  </view>
+</template>

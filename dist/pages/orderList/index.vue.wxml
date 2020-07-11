@@ -1,0 +1,19 @@
+<template name="34e47c90">
+  <view class="_div data-v-0cad80a1 container">
+    <view class="_div data-v-0cad80a1 list-c">
+      <view class="_div data-v-0cad80a1 item" wx:key="index" key="{{index}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-0cad80a1 shop-info" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+          <image src="{{item.poi_pic}}" class="_img data-v-0cad80a1"></image> <label class="_span data-v-0cad80a1 shop-name">{{item.poi_name}}</label>
+          <view class="_i data-v-0cad80a1 icon mt-arrow-right-o"></view> <label class="_span data-v-0cad80a1 order-status">{{item.status_description}}</label>
+        </view>
+        <view class="_div data-v-0cad80a1 googs-c" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}">
+          <view class="_div data-v-0cad80a1 goods" wx:key="idx" key="{{idx}}" wx:for="{{item.product_list}}" wx:for-index="idx" wx:for-item="itx"><label class="_span data-v-0cad80a1 s-l">{{itx.product_name}}</label> <label class="_span data-v-0cad80a1 s-r">x{{itx.product_count}}</label></view>
+        </view>
+        <view class="_div data-v-0cad80a1 price"><label class="_span data-v-0cad80a1 count">共{{item.product_list.length}}件商品，实付</label> <label class="_span data-v-0cad80a1 amount">￥{{item.total}}</label></view>
+        <view class="_div data-v-0cad80a1 bottom-c" bindtap="handleProxy" data-eventid="{{'2-'+index}}" data-comkey="{{$k}}">
+          <view class="_div data-v-0cad80a1 btn"><label class="_span data-v-0cad80a1">再来一单</label></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

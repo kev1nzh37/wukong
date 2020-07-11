@@ -1,0 +1,211 @@
+<template name="32bb5dba">
+  <view class="_div data-v-5c2b9409 container">
+    <view class="_div data-v-5c2b9409 header-c">
+      <view class="_div data-v-5c2b9409 header">
+        <view class="_div data-v-5c2b9409 h-l">
+          <image class="_img data-v-5c2b9409 shop-logo" src="{{shopInfo.pic_url}}"></image>
+        </view>
+        <view class="_div data-v-5c2b9409 h-r">
+          <view class="_div data-v-5c2b9409 r-t"><label class="_span data-v-5c2b9409 t-l">{{shopInfo.min_price_tip}}</label>
+            <view class="_div data-v-5c2b9409 s-l"></view> <label class="_span data-v-5c2b9409 t-m">{{shopInfo.delivery_time_tip}}</label>
+            <view class="_div data-v-5c2b9409 s-r"></view> <label class="_span data-v-5c2b9409 t-r">{{shopInfo.distance}}</label>
+          </view> <label class="_span data-v-5c2b9409 r-m">公告：{{shopInfo.bulletin}}</label>
+          <view class="_div data-v-5c2b9409 r-b"><label class="_span data-v-5c2b9409 b-l">减</label> <label class="_span data-v-5c2b9409 b-r">{{shopInfo.prompt_text}}</label>
+            <view class="_i data-v-5c2b9409 icon mt-arrow-right-o"></view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-5c2b9409 cate-c"><label class="_span data-v-5c2b9409 c-l" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" style=" {{('font-weight:' + (pageIndex === 0 ? 'bold' : null) + ';')}}">菜单</label> <label class="_span data-v-5c2b9409 c-m" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" style=" {{('font-weight:' + (pageIndex === 1 ? 'bold' : null) + ';')}}">评价</label> <label class="_span data-v-5c2b9409 c-r" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" style=" {{('font-weight:' + (pageIndex === 2 ? 'bold' : null) + ';')}}">商家</label>
+        <view class="_div data-v-5c2b9409 line" style=" {{lineStyle}}"></view>
+      </view>
+    </view>
+    <view class="_div data-v-5c2b9409 list-c" wx:if="{{pageIndex === 0}}">
+      <scroll-view class="_scroll-view data-v-5c2b9409 list-l" scroll-y="{{true}}">
+        <view class="_div data-v-5c2b9409 l-item {{[index === tagIndex ? 'active' : '']}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'3-'+index}}" data-comkey="{{$k}}" wx:for="{{foods}}" wx:for-index="index" wx:for-item="item">
+          <image src="{{item.icon}}" wx:if="{{item.icon.length > 0}}" class="_img data-v-5c2b9409"></image> <label class="_span data-v-5c2b9409">{{item.name}}</label> <text class="_text data-v-5c2b9409 count" wx:if="{{item.count > 0}}">{{item.count}}</text>
+        </view>
+      </scroll-view>
+      <scroll-view class="_scroll-view data-v-5c2b9409 list-r" scroll-y="{{true}}">
+        <view class="_div data-v-5c2b9409 section"><label class="_span data-v-5c2b9409 title">{{spus.title}}</label></view>
+        <view class="_div data-v-5c2b9409 item-list" wx:key="index" key="{{index}}" wx:for="{{spus.list}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-5c2b9409 item" bindtap="handleProxy" data-eventid="{{'7-'+index}}" data-comkey="{{$k}}">
+            <view class="_div data-v-5c2b9409 item-l">
+              <image src="{{item.picture}}" class="_img data-v-5c2b9409"></image>
+            </view>
+            <view class="_div data-v-5c2b9409 item-r"><label class="_span data-v-5c2b9409 title">{{item.name}}</label> <label class="_span data-v-5c2b9409 sub-title">{{item.description}}</label> <label class="_span data-v-5c2b9409 sale-num">{{item.month_saled_content}} {{item.praise_content}}</label>
+              <view class="_div data-v-5c2b9409 r-t"><label class="_span data-v-5c2b9409 price">￥{{item.min_price}}</label>
+                <view class="_div data-v-5c2b9409 sku" wx:if="{{item.attrs.length}}" catchtap="handleProxy" data-eventid="{{'6-'+index}}" data-comkey="{{$k}}"><label class="_span data-v-5c2b9409">选规格</label> <label class="_span data-v-5c2b9409 count" wx:if="{{item.sequence > 0}}">{{item.sequence}}</label></view>
+                <view class="_div data-v-5c2b9409 add-item" wx:else>
+                  <view class="_div data-v-5c2b9409 add-l" catchtap="handleProxy" wx:if="{{item.sequence > 0}}" data-eventid="{{'4-'+index}}" data-comkey="{{$k}}">
+                    <view class="_i data-v-5c2b9409 icon mt-reduce-o"></view> <label class="_span data-v-5c2b9409">{{item.sequence}}</label>
+                  </view>
+                  <view class="_div data-v-5c2b9409 add-r" catchtap="handleProxy" data-eventid="{{'5-'+index}}" data-comkey="{{$k}}">
+                    <view class="_i data-v-5c2b9409 icon mt-add-o"></view>
+                  </view>
+                </view>
+              </view>
+              <view class="_div data-v-5c2b9409 tags-c">
+                <image class="_img data-v-5c2b9409 tags" src="{{itm.picture_url}}" wx:key="idx" key="{{idx}}" wx:for="{{item.product_label_picture_list}}" wx:for-index="idx" wx:for-item="itm"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="_div data-v-5c2b9409 comment-c" wx:elif="{{pageIndex === 1}}">
+      <scroll-view class="_scroll-view data-v-5c2b9409 comment-sc" scroll-y="{{true}}">
+        <view class="_div data-v-5c2b9409 comment-header">
+          <view class="_div data-v-5c2b9409 h-l"><label class="_span data-v-5c2b9409 score">{{commentInfo.quality_score}}</label> <label class="_span data-v-5c2b9409 title">商家评分</label></view>
+          <view class="_div data-v-5c2b9409 h-m">
+            <view class="_div data-v-5c2b9409 m-t"><label class="_span data-v-5c2b9409 title">口味</label>
+              <view class="_div data-v-5c2b9409 star-c">
+                <view class="_i data-v-5c2b9409 icon mt-star-s" wx:key="idx" key="{{idx}}" wx:for="{{stars}}" wx:for-index="idx" wx:for-item="itx"></view>
+              </view> <label class="_span data-v-5c2b9409 score">{{commentInfo.food_score}}</label>
+            </view>
+            <view class="_div data-v-5c2b9409 m-b"><label class="_span data-v-5c2b9409 title">包装</label>
+              <view class="_div data-v-5c2b9409 star-c">
+                <view class="_i data-v-5c2b9409 icon mt-star-s" wx:key="idx" key="{{idx}}" wx:for="{{stars}}" wx:for-index="idx" wx:for-item="itx"></view>
+              </view> <label class="_span data-v-5c2b9409 score">{{commentInfo.pack_score}}</label>
+            </view>
+          </view>
+          <view class="_div data-v-5c2b9409 line"></view>
+          <view class="_div data-v-5c2b9409 h-r"><label class="_span data-v-5c2b9409 score">{{commentInfo.delivery_score}}</label> <label class="_span data-v-5c2b9409 title">配送评分</label></view>
+        </view>
+        <view class="_div data-v-5c2b9409 comment-tags">
+          <view class="_div data-v-5c2b9409 tag-item" wx:key="index" key="{{index}}" wx:for="{{commentInfo.commentMolds}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-5c2b9409">{{item}}</label></view>
+        </view>
+        <view class="_div data-v-5c2b9409 comment-list">
+          <view class="_div data-v-5c2b9409 item-c" wx:key="index" key="{{index}}" wx:for="{{commentInfo.comments}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-5c2b9409 item-l">
+              <image src="{{item.user_pic_url.length > 0 ? item.user_pic_url : 'http://ovyjkveav.bkt.clouddn.com/18-9-26/85572180.jpg'}}" class="_img data-v-5c2b9409"></image>
+            </view>
+            <view class="_div data-v-5c2b9409 item-r">
+              <view class="_div data-v-5c2b9409 h-r">
+                <view class="_div data-v-5c2b9409 r-t"><label class="_span data-v-5c2b9409 name">{{item.user_name}}</label> <label class="_span data-v-5c2b9409 date">{{item.comment_time}}</label></view>
+                <view class="_div data-v-5c2b9409 r-b">
+                  <view class="_div data-v-5c2b9409 b-l">
+                    <view class="_i data-v-5c2b9409 icon mt-star-s" wx:key="idx" key="{{idx}}" wx:for="{{stars}}" wx:for-index="idx" wx:for-item="itx"></view>
+                  </view> <label class="_span data-v-5c2b9409 b-r">{{item.ship_time}}分钟送达</label>
+                </view>
+              </view>
+              <view class="_div data-v-5c2b9409 r-comtent"><label class="_span data-v-5c2b9409">{{item.comment}}</label></view>
+              <view class="_div data-v-5c2b9409 r-imgs">
+                <view class="_div data-v-5c2b9409 single" wx:if="{{item.comment_pics.length === 1}}">
+                  <image src="{{itm.url}}" wx:key="idx" key="{{idx}}" wx:for="{{item.comment_pics}}" wx:for-index="idx" wx:for-item="itm" class="_img data-v-5c2b9409"></image>
+                </view>
+                <view class="_div data-v-5c2b9409 double" wx:if="{{item.comment_pics.length === 2 || item.comment_pics.length === 3}}">
+                  <image class="_img data-v-5c2b9409 comment-img" src="{{itm.url}}" wx:key="idx" key="{{idx}}" wx:for="{{item.comment_pics}}" wx:for-index="idx" wx:for-item="itm"></image>
+                </view>
+                <view class="_div data-v-5c2b9409 four" wx:if="{{item.comment_pics.length === 4}}">
+                  <image class="_img data-v-5c2b9409 comment-img" src="{{itm.url}}" wx:key="idx" key="{{idx}}" wx:for="{{item.comment_pics}}" wx:for-index="idx" wx:for-item="itm"></image>
+                </view>
+              </view>
+              <view class="_div data-v-5c2b9409 food-name">
+                <view class="_div data-v-5c2b9409 name-t" wx:if="{{item.praise_food_tip.length > 0}}">
+                  <view class="_i data-v-5c2b9409 icon mt-praise-o"></view> <label class="_span data-v-5c2b9409">{{item.praise_food_tip}}}</label>
+                </view>
+                <view class="_div data-v-5c2b9409 name-b" wx:if="{{item.comment_labels.length > 0}}">
+                  <view class="_i data-v-5c2b9409 icon mt-discount-o"></view> <label class="_span data-v-5c2b9409">{{item.commentTags}}</label>
+                </view>
+              </view>
+              <view class="_div data-v-5c2b9409 reply-c" wx:if="{{item.add_comment_list.length}}"><label class="_span data-v-5c2b9409">{{item.poi_reply_contents}}</label></view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="_div data-v-5c2b9409 shop-info" wx:elif="{{pageIndex === 2}}">
+      <view class="_div data-v-5c2b9409 address">
+        <view class="_i data-v-5c2b9409 icon mt-location-o"></view> <label class="_span data-v-5c2b9409">上海市闵行区龙茗路1888号</label>
+        <view class="_i data-v-5c2b9409 icon mt-phone-o"></view>
+      </view>
+      <view class="_div data-v-5c2b9409 archive">
+        <view class="_i data-v-5c2b9409 icon mt-security-o"></view> <label class="_span data-v-5c2b9409">查看食品安全档案</label>
+        <view class="_i data-v-5c2b9409 icon mt-arrow-right-o"></view>
+      </view>
+      <view class="_div data-v-5c2b9409 delivery">
+        <view class="_div data-v-5c2b9409 top">
+          <view class="_i data-v-5c2b9409 icon mt-service-o"></view> <label class="_span data-v-5c2b9409">配送服务：由美团快递提供配送服务</label>
+        </view>
+        <view class="_div data-v-5c2b9409 btm">
+          <view class="_i data-v-5c2b9409 icon mt-clock-s"></view> <label class="_span data-v-5c2b9409">配送时间：09:50-23:59</label>
+        </view>
+      </view>
+      <view class="_div data-v-5c2b9409 service">
+        <view class="_div data-v-5c2b9409 top">
+          <view class="_i data-v-5c2b9409 icon mt-selected-o"></view> <label class="_span data-v-5c2b9409 l">商家服务：</label> <label class="_span data-v-5c2b9409 k">订</label> <label class="_span data-v-5c2b9409 v">跨天预订</label> <label class="_span data-v-5c2b9409 k" style=" {{('margin-left:' + (10 + 'rpx') + ';')}}">取</label> <label class="_span data-v-5c2b9409 v">到店自取（享优惠）</label>
+        </view>
+        <view class="_div data-v-5c2b9409 discounts">
+          <view class="_div data-v-5c2b9409 item" wx:key="index" key="{{index}}" wx:for="{{shopInfo.discounts2}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{item.icon_url}}" class="_img data-v-5c2b9409"></image> <label class="_span data-v-5c2b9409">{{item.info}}</label>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-5c2b9409 footer-c" wx:if="{{pageIndex === 0}}">
+      <view class="_div data-v-5c2b9409 c-t"><label class="_span data-v-5c2b9409">{{reduceTip}}</label></view>
+      <view class="_div data-v-5c2b9409 c-m">
+        <view class="_div data-v-5c2b9409 l"><label class="_span data-v-5c2b9409 price" wx:if="{{totalPrice > 0 || productCount > 0}}">￥<label class="_span data-v-5c2b9409">{{totalPrice}}</label></label>
+          <view class="_div data-v-5c2b9409 m-l"><label class="_span data-v-5c2b9409 l-l">另需配送费￥{{shopInfo.support_pay}}</label>
+            <view class="_div data-v-5c2b9409 l-m"></view> <label class="_span data-v-5c2b9409 l-r">支持自取</label>
+          </view>
+        </view>
+        <view class="_div data-v-5c2b9409 m-r" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" style=" {{('background-color:' + (btnTitle === '去结算' ? '#F0D179' : '#2F2F2F') + ';')}}"><label class="_span data-v-5c2b9409" style=" {{('color:' + (btnTitle === '去结算' ? '#333' : '#666') + ';')}}">{{btnTitle}}</label></view>
+      </view>
+      <view class="_div data-v-5c2b9409 cart-c">
+        <image mode="widthFix" src="{{productCount > 0 ? 'http://ovyjkveav.bkt.clouddn.com/18-9-28/55877074.jpg' : 'http://ovyjkveav.bkt.clouddn.com/18-9-25/77715001.jpg'}}" class="_img data-v-5c2b9409"></image> <label wx:if="{{productCount > 0}}" class="_span data-v-5c2b9409">{{productCount}}</label>
+      </view>
+    </view>
+    <view class="_div data-v-5c2b9409 sku-modal" wx:if="{{visibleSkuModal}}">
+      <view class="_div data-v-5c2b9409 modal-c">
+        <view class="_div data-v-5c2b9409 header"><label class="_span data-v-5c2b9409 title">{{skuInfo.title}}</label>
+          <view class="_div data-v-5c2b9409 attrs" wx:key="index" key="{{index}}" wx:for="{{skuInfo.attrs}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-5c2b9409 name">{{item.name}}：</label>
+            <view class="_div data-v-5c2b9409 sku">
+              <view class="_div data-v-5c2b9409 item {{[itm.selected ? 'selected' : '']}}" wx:key="idx" key="{{idx}}" bindtap="handleProxy" data-eventid="{{'9-'+index+'-'+idx}}" data-comkey="{{$k}}" wx:for="{{item.values}}" wx:for-index="idx" wx:for-item="itm"><label class="_span data-v-5c2b9409">{{itm.value}}</label></view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-5c2b9409 footer">
+          <view class="_div data-v-5c2b9409 f-l"><label class="_span data-v-5c2b9409 price">￥{{skuInfo.price}}</label> <label class="_span data-v-5c2b9409 sku">({{skuInfo.selectedItems}})</label></view>
+          <view class="_div data-v-5c2b9409 f-r">
+            <view class="_div data-v-5c2b9409 shopping-c" wx:if="{{!skuInfo.selectedCount}}" bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}">
+              <view class="_i data-v-5c2b9409 icon mt-shopping-cart-o"></view> <label class="_span data-v-5c2b9409">加入购物车</label>
+            </view>
+            <view class="_div data-v-5c2b9409 add" wx:if="{{skuInfo.selectedCount > 0}}">
+              <view class="_i data-v-5c2b9409 icon mt-reduce-o" bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}" style=" {{('color:' + '#ccc' + ';' + 'font-size:' + (36 + 'rpx') + ';')}}"></view> <label class="_span data-v-5c2b9409">{{skuInfo.selectedCount}}</label>
+              <view class="_i data-v-5c2b9409 icon mt-add-o" bindtap="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}" style=" {{('color:' + '#F9D173' + ';' + 'font-size:' + (40 + 'rpx') + ';')}}"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-5c2b9409 cancle" bindtap="handleProxy" data-eventid="{{'13'}}" data-comkey="{{$k}}">
+        <view class="_i data-v-5c2b9409 icon mt-fork-o"></view>
+      </view>
+    </view>
+    <view class="_div data-v-5c2b9409 previewModal" wx:if="{{visibleItemModal}}">
+      <view class="_div data-v-5c2b9409 modal-c">
+        <view class="_div data-v-5c2b9409 header-p">
+          <image class="_img data-v-5c2b9409 item-img" src="{{previewInfo.picture}}"></image> <label class="_span data-v-5c2b9409 title">{{previewInfo.name}}</label>
+          <view class="_div data-v-5c2b9409 saled"><label class="_span data-v-5c2b9409 l">{{previewInfo.month_saled_content}}</label> <label class="_span data-v-5c2b9409 r">{{previewInfo.praise_content}}</label></view>
+          <view class="_div data-v-5c2b9409 tags-c" wx:if="{{previewInfo.product_label_picture_list > 0}}">
+            <image class="_img data-v-5c2b9409 tags" src="{{itm.picture_url}}" wx:key="idx" key="{{idx}}" wx:for="{{previewInfo.product_label_picture_list}}" wx:for-index="idx" wx:for-item="itm"></image>
+          </view> <label class="_span data-v-5c2b9409 desc">{{previewInfo.description}}</label>
+        </view>
+        <view class="_div data-v-5c2b9409 footer-p"><label class="_span data-v-5c2b9409 l">￥{{previewInfo.min_price}}</label>
+          <view class="_div data-v-5c2b9409 r">
+            <view class="_div data-v-5c2b9409 add-c" wx:if="{{previewInfo.attrs.length === 0}}">
+              <view class="_div data-v-5c2b9409 c-l" wx:if="{{previewInfo.sequence > 0}}">
+                <view class="_i data-v-5c2b9409 icon mt-reduce-o" bindtap="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}" style=" {{('color:' + '#ccc' + ';' + 'font-size:' + (36 + 'rpx') + ';')}}"></view> <label class="_span data-v-5c2b9409">{{previewInfo.sequence}}</label>
+              </view>
+              <view class="_i data-v-5c2b9409 icon mt-add-o" bindtap="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}" style=" {{('color:' + '#F9D173' + ';' + 'font-size:' + (40 + 'rpx') + ';')}}"></view>
+            </view>
+            <view class="_div data-v-5c2b9409 attr" wx:if="{{previewInfo.attrs.length > 0}}" bindtap="handleProxy" data-eventid="{{'16'}}" data-comkey="{{$k}}"><label class="_span data-v-5c2b9409">选规格</label> <label class="_span data-v-5c2b9409 count" wx:if="{{previewInfo.sequence > 0}}">{{previewInfo.sequence}}</label></view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-5c2b9409 cancle" bindtap="handleProxy" data-eventid="{{'17'}}" data-comkey="{{$k}}">
+        <view class="_i data-v-5c2b9409 icon mt-fork-o"></view>
+      </view>
+    </view>
+  </view>
+</template>

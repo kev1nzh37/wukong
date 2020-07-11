@@ -1,0 +1,14 @@
+<import src="/components/sep-line.vue.wxml" /><template name="33a3f886">
+  <view class="_div data-v-8411f064 container">
+    <view class="_div data-v-8411f064 list-c">
+      <view class="_div data-v-8411f064 item" wx:key="index" key="{{index}}" wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-8411f064 item-t">
+          <view class="_div data-v-8411f064 t-l"><label class="_span data-v-8411f064 s-t">{{item.title}}</label> <label class="_span data-v-8411f064 s-b">{{item.valid_time_desc}}</label></view>
+          <view class="_div data-v-8411f064 t-r"><label class="_span data-v-8411f064 s-t">￥<label class="_span data-v-8411f064">{{item.amount}}</label></label> <label class="_span data-v-8411f064 s-b">{{item.price_limit}}</label></view>
+        </view>
+        <view class="_div data-v-8411f064 item-m"><template data="{{...$root[$kk+'0-'+index], $root}}" is="4abf52b0"></template></view> <label class="_span data-v-8411f064 item-b">{{item.use_limits}}</label>
+      </view>
+    </view>
+    <view class="_div data-v-8411f064 bottom" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"><label class="_span data-v-8411f064 s-l">没有更多有效券了</label> <label class="_span data-v-8411f064 s-m">|</label> <label class="_span data-v-8411f064 s-r">查看无效券</label> <label class="_span data-v-8411f064 s-arrow">>></label></view>
+  </view>
+</template>
