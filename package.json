@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@vant/weapp": "^1.3.2",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.19",
     "minapp-api-promise": "^1.0.2",
     "mpvue": "^1.0.11",
     "mpvue-wxparse": "^0.6.5",
